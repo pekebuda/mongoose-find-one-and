@@ -12,6 +12,9 @@
     "method",
     "static"
   ],
+  "dependencies": {
+       "lodash": "4.6.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
