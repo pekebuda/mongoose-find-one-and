@@ -28,7 +28,7 @@ module.exports = function(schema, options){
                         if (CALLBACK) {return CALLBACK(e, null)} 
                         else {throw e} 
                     } else if (r === null) {
-                        if (CALLBACK) {return CALLBACK(new Error("MismatchError querying from " + STATIC_NAME), null) } 
+                        if (CALLBACK) {return CALLBACK(new Error("MismatchError querying from " + STATIC_NAME + " with value " + query), null) } 
                         else {throw new Error("MismatchError querying from " + STATIC_NAME)}
                     } else { 
                         return r[METHOD_NAME].apply(r, METHOD_ARGUMENTS);
